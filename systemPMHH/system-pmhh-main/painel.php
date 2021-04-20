@@ -198,9 +198,6 @@ $textarea_adminedit = $usr_permissao ? '<form method="POST" action="">
                                        <li>
                                          <a href="user_preferencias.php">Configurações</a><br>
                                        </li>
-                                       <li>
-                                         <a href="user_preferencias.php">Configurações</a><br>
-                                       </li>
                                        <hr>
                                        <?php 
                                        include("kernel/get_patente.php");
