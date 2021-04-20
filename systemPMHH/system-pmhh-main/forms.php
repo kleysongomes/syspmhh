@@ -620,7 +620,7 @@ echo '<script type="text/javascript">alert("Usuário readmitido com sucesso!");w
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" id="usuarios" name="usuarios" placeholder="Digite os novos usuários separados por /" class="form-control">
-                                                    <span class="help-block">Separe com /<br> Exemplo: RenatoPires/theGuiihBR/Fulano</span>
+                                                    <span class="help-block">Separe com /<br> Exemplo: ,Mulequinho/BRKINGZ/Fulano</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -666,7 +666,7 @@ echo '<script type="text/javascript">alert("Usuário readmitido com sucesso!");w
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" id="usuarios" name="usuarios" placeholder="Digite os aprovados separados por /" class="form-control">
-                                                    <span class="help-block">Separe com /<br> Exemplo: RenatoPires/theGuiihBR/Fulano</span>
+                                                    <span class="help-block">Separe com /<br> Exemplo: ,Mulequinho/BRKINGZ/Fulano</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -713,7 +713,7 @@ echo '<script type="text/javascript">alert("Usuário readmitido com sucesso!");w
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" id="usuarios" name="usuarios" placeholder="Digite os aprovados separados por /" class="form-control">
-                                                    <span class="help-block">Separe com /<br> Exemplo: RenatoPires/theGuiihBR/Fulano</span>
+                                                    <span class="help-block">Separe com /<br> Exemplo: ,Mulequinho/BRKINGZ/Fulano</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -759,7 +759,7 @@ echo '<script type="text/javascript">alert("Usuário readmitido com sucesso!");w
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" id="usuarios" name="usuarios" placeholder="Digite os aprovados separados por /" class="form-control">
-                                                    <span class="help-block">Separe com /<br> Exemplo: RenatoPires/theGuiihBR/Fulano</span>
+                                                    <span class="help-block">Separe com /<br> Exemplo: ,Mulequinho/BRKINGZ/Fulano</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -805,7 +805,7 @@ echo '<script type="text/javascript">alert("Usuário readmitido com sucesso!");w
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" id="usuarios" name="usuarios" placeholder="Digite os aprovados separados por /" class="form-control">
-                                                    <span class="help-block">Separe com /<br> Exemplo: RenatoPires/theGuiihBR/Fulano</span>
+                                                    <span class="help-block">Separe com /<br> Exemplo: ,Mulequinho/BRKINGZ/Fulano</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -849,7 +849,7 @@ echo '<script type="text/javascript">alert("Usuário readmitido com sucesso!");w
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" id="usuarios" name="usuarios" placeholder="Digite os aprovados separados por /" class="form-control">
-                                                    <span class="help-block">Separe com /<br> Exemplo: RenatoPires/theGuiihBR/Fulano</span>
+                                                    <span class="help-block">Separe com /<br> Exemplo: ,Mulequinho/BRKINGZ/Fulano</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -896,7 +896,7 @@ echo '<script type="text/javascript">alert("Usuário readmitido com sucesso!");w
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" id="usuarios" name="usuarios" placeholder="Digite os aprovados separados por /" class="form-control">
-                                                    <span class="help-block">Separe com /<br> Exemplo: RenatoPires/theGuiihBR/Fulano</span>
+                                                    <span class="help-block">Separe com /<br> Exemplo: ,Mulequinho/BRKINGZ/Fulano</span>
                                                 </div>
                                             </div>
                                             <div class="row form-group">

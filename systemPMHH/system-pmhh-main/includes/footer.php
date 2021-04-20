@@ -3,7 +3,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="copyright">
-                                <p>Desenvolvido <i class="fa fa-code"></i> com <i class="fa fa-heart"></i> por <a target="_blank" href="https://github.com/the1scient">theGuiihBR</a>. Base por Colorlib.</p>
+                            <p>Copyright ©
+                                <script>document.write(new Date().getFullYear());</script>2021 | Desenvolvido e Mantido por<a href="https://github.com/kleysongomes" style="color: black;" target="_blank"> BRKINGZ</a></p>
                             </div>
                         </div>
                     </div>

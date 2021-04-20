@@ -90,7 +90,8 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,97,1) 37%, rgba
                                     </div>
                                 </div>
                             <div class="register-link">
-                            <p>Desenvolvido <i class="fa fa-code"></i> com <i class="fa fa-heart"></i> por <a href="https://github.com/the1scient/" target="_blank">theGuiihBR</a></p>
+                            <p>Copyright ©
+                                <script>document.write(new Date().getFullYear());</script>2021 | Desenvolvido e Mantido por<a href="https://github.com/kleysongomes" style="color: black;" target="_blank"> BRKINGZ</a></p>
 
                             </div>
                         </div>
