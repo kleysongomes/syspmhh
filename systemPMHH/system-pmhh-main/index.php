@@ -59,14 +59,14 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,97,1) 37%, rgba
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <h3>System DPM - Login <img src="<?php echo $imagem_site ?>" /></h3> 
+                                <h3>System PMHH - Login <img src="<?php echo $imagem_site ?>" /></h3> 
                             </a>
                         </div>
                         <div class="login-form">
                             <form action="kernel/login.php" method="post">
                                 <div class="form-group">
                                     <label>Usuário</label>
-                                    <input class="au-input au-input--full" type="text" name="usuario" placeholder="Digite seu usuário. Exemplo: RenatoPires">
+                                    <input class="au-input au-input--full" type="text" name="usuario" placeholder="Digite seu usuário. Exemplo: BRKINGZ">
                                 </div>
                                 <div class="form-group">
                                     <label>Senha</label>
@@ -89,8 +89,8 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,97,1) 37%, rgba
                                     </div>
                                 </div>
                             <div class="register-link">
-                                <p>Copyright ©
-                                <script>document.write(new Date().getFullYear());</script>2021 | Desenvolvido e Mantido por<a href="https://github.com/kleysongomes" style="color: black;" target="_blank"> BRKINGZ</a></p>
+                            <p>Copyright ©
+                                <script>document.write(new Date().getFullYear());</script> | Desenvolvido e Mantido por <a href="https://github.com/kleysongomes" style="color: black;" target="_blank">BRKINGZ</a></p>
                             </div>
                             
                         </div>

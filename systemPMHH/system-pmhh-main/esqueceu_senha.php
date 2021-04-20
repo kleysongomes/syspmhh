@@ -59,7 +59,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,97,1) 37%, rgba
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                            <h3>System DPM - Esqueci minha senha <img src="<?php echo $imagem_site ?>" /></h3> 
+                            <h3>System PMHH </br> Esqueci minha senha </br><img src="<?php echo $imagem_site ?>" /></h3> 
                             </a>
                         </div>
                         <div class="login-form">
@@ -70,14 +70,14 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,97,1) 37%, rgba
                                 </div>
                                 <div class="form-group">
                                     <label>Nova senha</label>
-                                    <input class="au-input au-input--full" type="password" name="senha" placeholder="Email">
+                                    <input class="au-input au-input--full" type="password" name="senha" placeholder="Nova senha">
                                 </div>
                                 <?php $numrand = rand(1000, 9999);
-                            $_SESSION["cod_secreto"] = "DPM-".$numrand;
+                            $_SESSION["cod_secreto"] = "PMHH-".$numrand;
                         ?>
                                 <div class="form-group">
                                     <label>Missão</label>
-                                    <input class="au-input au-input--full" type="text" name="password" style="background-color: rgba(0,0,0,0.1); border-bottom: 3px solid gray;" disabled value="DPM-<?php echo $numrand ?>">
+                                    <input class="au-input au-input--full" type="text" name="password" style="background-color: rgba(0,0,0,0.1); border-bottom: 3px solid gray;" disabled value="PMHH-<?php echo $numrand ?>">
                                     <small>Coloque o código acima em sua missão. Espere cerca de 10 segundos e clique em mudar senha.</small>
                                 </div>
                                
@@ -91,7 +91,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,97,1) 37%, rgba
                                 </div>
                             <div class="register-link">
                             <p>Copyright ©
-                                <script>document.write(new Date().getFullYear());</script>2021 | Desenvolvido e Mantido por<a href="https://github.com/kleysongomes" style="color: black;" target="_blank"> BRKINGZ</a></p>
+                                <script>document.write(new Date().getFullYear());</script> | Desenvolvido e Mantido por <a href="https://github.com/kleysongomes" style="color: black;" target="_blank">BRKINGZ</a></p>
 
                             </div>
                         </div>
