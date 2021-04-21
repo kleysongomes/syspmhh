@@ -48,7 +48,7 @@ $sqlfetchsudo = mysqli_fetch_array($getusersudo);
 $usr_sudo = $sqlfetchsudo["usr_perm"];
 
 ?>
-<!-- MENU SIDEBAR-->
+<!-- MENU SIDEBAR Desktop-->
 <aside class="menu-sidebar2">
             <div class="logo" style="background: #47494e;">
                 <a href="painel.php">
@@ -421,4 +421,4 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                 </nav>
             </div>
         </aside>
-        <!-- END MENU SIDEBAR-->
+        <!-- END MENU SIDEBAR Desktop-->

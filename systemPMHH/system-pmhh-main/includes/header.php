@@ -158,6 +158,8 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                     </div>
                 </div>
             </header>
+
+<!--MENU SIDEBAR MOBILE-->
             <aside class="menu-sidebar2 js-right-sidebar d-block d-lg-none">
             <div class="logo" style="background: #47494e;">
                 <a href="painel.php">
@@ -530,3 +532,4 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                 </nav>
             </div>
             </aside>
+                    <!-- END MENU SIDEBAR MOBILE-->

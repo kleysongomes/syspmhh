@@ -17,9 +17,9 @@ echo "</div>";
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
+    <meta name="description" content="System PMHH">
+    <meta name="author" content="System PMHH">
+    <meta name="keywords" content="System PMHH">
 
     <!-- Title Page-->
     <title><?php echo $titulo_site ?> - Esqueceu a senha</title>
@@ -91,7 +91,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,97,1) 37%, rgba
                                 </div>
                             <div class="register-link">
                             <p>Copyright ©
-                                <script>document.write(new Date().getFullYear());</script> | Desenvolvido e Mantido por <a href="https://github.com/kleysongomes" style="color: black;" target="_blank">BRKINGZ</a></p>
+                                <script>document.write(new Date().getFullYear());</script> | Mantido por <a href="https://github.com/kleysongomes" style="color: black;" target="_blank">BRKINGZ</a></p>
 
                             </div>
                         </div>
