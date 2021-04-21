@@ -13,6 +13,7 @@ if(isset($_POST["enviar_ts"])) {
     foreach($str as $usr) {
         $sql_inserhist = mysqli_query($conn, "INSERT INTO historico(enviado_por, usr_habbo, tipo, msg) VALUES('{$usuarioNome}', '{$usr}', '4', 'Foi aprovado no TS.')");
         $query_inserir = mysqli_query($conn, "INSERT INTO membros(usr_habbo, usr_patente, usr_responsavel) VALUES('{$usr}', '17', '{$usuarioNome}')");
+        $query_insertguia = mysqli_query($conn, "INSERT INTO guias(nickname, cargo) VALUES('{$usr}', '1')");
     }
     $query_relatorio_ts = mysqli_query($conn, "INSERT INTO relatorios(usr_habbo, recrutas, observacoes, tipo) VALUES('{$usuarioNome}', '{$usuarios}', '{$obs}', '0')");
     echo "<script type='text/javascript'>alert('Relatório de TS enviado com sucesso.');window.location.href='forms.php?type=add_ts';</script>";

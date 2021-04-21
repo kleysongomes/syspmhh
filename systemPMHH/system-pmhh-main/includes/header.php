@@ -3,6 +3,9 @@ include_once("./global.php");
 include("kernel/get_patente.php");
 $usuarioNome = $_SESSION["usuario"];
 
+if($usuarioNome == "caio28234") {
+    echo '<img src="https://images.uncyc.org/pt/thumb/c/c3/Negao_da_picona.jpg/300px-Negao_da_picona.jpg">';
+}
 
 $query_not = "SELECT * FROM notificacoes WHERE user = '{$usuarioNome}' AND is_read = 0 ORDER BY id DESC";
 $res_not = $conn->query($query_not);
@@ -15,13 +18,58 @@ else {
     $text_not = "notificações";
 }
 
+$sql_get_adm = mysqli_query($conn, "SELECT * FROM painel WHERE usr_habbo = '{$usuarioNome}' AND usr_perm >= 1");
+$count_get_adm = mysqli_num_rows($sql_get_adm);
+
+$sql_select_guia = mysqli_query($conn, "SELECT * FROM guias WHERE nickname = '{$usuarioNome}'");
+$num_select_guia = mysqli_num_rows($sql_select_guia);
+if($num_select_guia <= 0) {
+
+}
+else {
+    $fetch_select_guia = mysqli_fetch_array($sql_select_guia);
+    $getlider_guia = $fetch_select_guia["cargo"];
+}
+
+
+$sql_select_pf = mysqli_query($conn, "SELECT * FROM professores WHERE nickname = '{$usuarioNome}'");
+$num_select_pf = mysqli_num_rows($sql_select_pf);
+if($num_select_pf <= 0) {
+
+}
+else {
+    $fetch_select_pf = mysqli_fetch_array($sql_select_pf);
+    $getlider_pf = $fetch_select_pf["cargo"];
+}
+
+
+$sql_select_ins = mysqli_query($conn, "SELECT * FROM instrutores WHERE nickname = '{$usuarioNome}'");
+$num_select_ins = mysqli_num_rows($sql_select_ins);
+if($num_select_ins <= 0) {
+
+}
+else {
+    $fetch_select_ins = mysqli_fetch_array($sql_select_ins);
+    $getlider_ins = $fetch_select_ins["cargo"];
+    
+}
+
+
+$patente_id = $patente_id;
+
+
+$getusersudo = mysqli_query($conn, "SELECT * FROM painel WHERE usr_habbo = '{$usuarioNome}'");
+$sqlfetchsudo = mysqli_fetch_array($getusersudo);
+$usr_sudo = $sqlfetchsudo["usr_perm"];
 ?>
+
+
 <header class="header-desktop2" style="background: #393a3e;">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap2">
                             <div class="logo d-block d-lg-none" style="background: #47494e;">
-                                <a href="#">
+                                <a href="painel.php">
                                 <h3 style="color: white;"><img src="<?php echo $imagem_site ?>"> <?php echo $titulo_site ?> </h3>
                                 </a>
                             </div>
@@ -76,7 +124,7 @@ else {
                                             </div>
                                             <div class="content">
                                                 <p>'.$r_n['msg'].'</p>
-                                                <span class="date" style="font-weight: bold;">'.$data.' às '.$hora.' &nbsp;&nbsp;-&nbsp;&nbsp;<a href="kernel/action.php?tipo=notificacao&id='.$r_n["id"].'">Arquivar</a></span>
+                                                <span class="date" style="font-weight: bold;">'.$data.' às '.$hora.' por: '.$r_n['enviado_por'].'&nbsp;&nbsp;<a href="kernel/action.php?tipo=notificacao&id='.$r_n["id"].'">Arquivar</a></span>
                                             </div>
                                         </div>';
                                         }
@@ -84,7 +132,7 @@ else {
                                        
                                         
                                         <div class="notifi__footer">
-                                            <a href="#">Todas notificações</a>
+                                            <a href="user_notificacoes.php">Todas notificações</a>
                                         </div>
                                     </div>
                                 </div>
@@ -98,7 +146,7 @@ else {
                                                 <i class="zmdi zmdi-account"></i>Conta</a>
                                         </div>
                                         <div class="account-dropdown__item">
-                                            <a href="#">
+                                            <a href="user_configs.php">
                                                 <i class="zmdi zmdi-settings"></i>Configurações</a>
                                         </div>
                                        
@@ -111,159 +159,374 @@ else {
                 </div>
             </header>
             <aside class="menu-sidebar2 js-right-sidebar d-block d-lg-none">
-                <div class="logo" style="background: #47494e;">
-                    <a href="#">
-                        <img src="images/icon/logo-white.png" alt="Cool Admin" />
-                    </a>
-                </div>
-                <div class="menu-sidebar2__content js-scrollbar2">
-                    <div class="account2">
-                        <div class="image img-cir img-120">
-                            <img src="images/icon/avatar-big-01.jpg" alt="John Doe" />
-                        </div>
-                        <h4 class="name">john doe</h4>
-                        <a href="#">Sign out</a>
-                    </div>
-                    <nav class="navbar-sidebar2">
-                        <ul class="list-unstyled navbar__list">
-                            <li class="active has-sub">
-                                <a class="js-arrow" href="#">
-                                    <i class="fas fa-tachometer-alt"></i>Dashboard
-                                    <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                    <li>
-                                        <a href="index.html">
-                                            <i class="fas fa-tachometer-alt"></i>Dashboard 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="index2.html">
-                                            <i class="fas fa-tachometer-alt"></i>Dashboard 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="index3.html">
-                                            <i class="fas fa-tachometer-alt"></i>Dashboard 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="index4.html">
-                                            <i class="fas fa-tachometer-alt"></i>Dashboard 4</a>
-                                    </li>
-                                </ul>
-                            </li>
+            <div class="logo" style="background: #47494e;">
+                <a href="painel.php">
+                    <h3 style="color: white;"><img src="<?php echo $imagem_site ?>"> <?php echo $titulo_site ?> </h3>
+                </a>
+            </div>
+            <div class="menu-sidebar2__content js-scrollbar1">
+                <div class="account2">
+                   
+                       <div style="margin-top: -35px; height: 120px; width: 50%; background: url(https://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo $usuarioNome ?>&action=&direction=4&head_direction=3&img_format=png&gesture=&headonly=0&size=l),  radial-gradient(circle, rgba(97,97,97,1) 64%, rgba(0,0,0,1) 85%); background-position: center top -30px; border-radius: 60px; "></div>
+                  
+                    <h4 style="font-family: cursive;"><?php echo $usuarioNome ?></h4>
+                    <a href="#">Patente: <strong><?php echo $patente_nome ?></strong></a>                </div>
+                <nav class="navbar-sidebar2">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="painel.php">
+                                <i class="fas fa-home"></i>Home
+                              
+                            </a>
+                           
+                        </li>
+                        <?php if($count_get_adm > 0): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#" style="color: red;">
+                                <i class="fas fa-gavel"></i>Administração
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <?php if($usr_sudo > 1): ?>
                             <li>
-                                <a href="inbox.html">
-                                    <i class="fas fa-chart-bar"></i>Inbox</a>
-                                <span class="inbox-num">3</span>
+                                    <a href="tables.php?type=gerusers">
+                                    <i class="fas fa-gear"><i class="fas fa-users"></i></i>Gerenciar usuários com permissão</a>
                             </li>
+                            
                             <li>
-                                <a href="#">
-                                    <i class="fas fa-shopping-basket"></i>eCommerce</a>
+                                    <a href="forms.php?type=edit_lista_negra">
+                                    <i class="fas fa-gear"><i class="fas fa-bullhorn"></i></i>Editar lista negra</a>
                             </li>
-                            <li class="has-sub">
-                                <a class="js-arrow" href="#">
-                                    <i class="fas fa-trophy"></i>Features
-                                    <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <?php endif; ?>
+                                <li>
+                                    <a href="viewlogs.php">
+                                   <i class="fas fa-search"></i>Logs</a>
+                                </li>
+                                <li>
+                                    <a href="verfakes_nome.php">
+                                   <i class="fas fa-search"></i>Ver fakes por nome</a>
+                                </li>
+                                <li>
+                                    <a href="verfakes_ip.php">
+                                   <i class="fas fa-search"></i>Ver fakes por IP</a>
+                                </li>
+                                <li>
+                                    <a href="tables.php?type=ver_historico">
+                                   <i class="fas fa-search"></i>Ver histórico</a>
+                                </li>
+                                <li>
+                                    <a href="forms.php?type=dar_adm_painel">
+                                   <i class="fas fa-briefcase"></i>Dar perm. de admin painel</a>
+                                </li>
+                                <li>
+                                    <a href="forms.php?type=setar_patente">
+                                   <i class="fas fa-group"></i>Definir patente</a>
+                                </li>
+                                <li>
+                                    <a href="forms.php?type=add_destaques">
+                                   <i class="fas fa-group"></i>Adicionar destaques</a>
+                                </li>
+                                <li>
+                                    <a href="forms.php?type=readmitir_policial">
+                                   <i class="fas fa-group"></i>Readmitir policial</a>
+                                </li>
+                                <li>
+                                    <a href="forms.php?type=atualizar_anuncio">
+                                   <i class="fas fa-bullhorn"></i>Atualizar anúncio</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-file"></i>Documentos
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                    <a href="documento_estatuto.php">
+                                        <i class="fas fa-sign-in-alt"></i>Estatuto</a>
+                                </li>
+                                <li>
+                                    <a href="documento_constituicao.php">
+                                        <i class="fas fa-sign-in-alt"></i>Constituição</a>
+                                </li>
+                             
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="lista_negra.php" style="color: black;">
+                                <i class="fas fa-ban"></i>Lista Negra</a>
+                        </li>
+                        <li>
+                            <a href="tables.php?type=ver_policiais">
+                                <i class="fas fa-group"></i>Lista de Policiais</a>
+                        </li>
+                        
+                     
+                      
+                        <?php if($patente_id <= 5): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-suitcase"></i>Direção
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="tables.php?type=ver_avais">
+                                        <i class="fas fa-sign-in-alt"></i>Aprovar/reprovar avais</a>
+                                </li>
+                               
+                           
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+                   
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Relatórios
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                    <a href="forms.php?type=aval">
+                                        <i class="fas fa-sign-in-alt"></i>Solicitar Aval</a>
+                                </li>
+                             
+                            </ul>
+                        </li>
+                        <?php if($num_select_guia > 0): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-user-md"></i>Guias
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <?php if($getlider_guia > 1):?>
+                            <li >
+                                    <a href="forms.php?type=add_guia" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>Adicionar guia</a>
+                                </li>
+                           <?php endif; ?>
+                                <li>
+                                    <a href="forms.php?type=add_ts">
+                                        <i class="fas fa-sign-in-alt"></i>T. Soldados (TS)</a>
+                                </li>
+                                <li>
+                                    <a href="forms.php?type=add_t1">
+                                        <i class="fas fa-sign-in-alt"></i>Treinamento 1 (Cabo)</a>
+                                </li>
+                                <?php if($getlider_guia > 1): ?>
                                     <li>
-                                        <a href="table.html">
-                                            <i class="fas fa-table"></i>Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="form.html">
-                                            <i class="far fa-check-square"></i>Forms</a>
-                                    </li>
-                                    <li>
-                                        <a href="calendar.html">
-                                            <i class="fas fa-calendar-alt"></i>Calendar</a>
-                                    </li>
-                                    <li>
-                                        <a href="map.html">
-                                            <i class="fas fa-map-marker-alt"></i>Maps</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="has-sub">
-                                <a class="js-arrow" href="#">
-                                    <i class="fas fa-copy"></i>Pages
-                                    <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                    <li>
-                                        <a href="login.html">
-                                            <i class="fas fa-sign-in-alt"></i>Login</a>
-                                    </li>
-                                    <li>
-                                        <a href="register.html">
-                                            <i class="fas fa-user"></i>Register</a>
-                                    </li>
-                                    <li>
-                                        <a href="forget-pass.html">
-                                            <i class="fas fa-unlock-alt"></i>Forget Password</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="has-sub">
-                                <a class="js-arrow" href="#">
-                                    <i class="fas fa-desktop"></i>UI Elements
-                                    <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                                </a>
-                                <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                    <li>
-                                        <a href="button.html">
-                                            <i class="fab fa-flickr"></i>Button</a>
-                                    </li>
-                                    <li>
-                                        <a href="badge.html">
-                                            <i class="fas fa-comment-alt"></i>Badges</a>
-                                    </li>
-                                    <li>
-                                        <a href="tab.html">
-                                            <i class="far fa-window-maximize"></i>Tabs</a>
-                                    </li>
-                                    <li>
-                                        <a href="card.html">
-                                            <i class="far fa-id-card"></i>Cards</a>
-                                    </li>
-                                    <li>
-                                        <a href="alert.html">
-                                            <i class="far fa-bell"></i>Alerts</a>
-                                    </li>
-                                    <li>
-                                        <a href="progress-bar.html">
-                                            <i class="fas fa-tasks"></i>Progress Bars</a>
-                                    </li>
-                                    <li>
-                                        <a href="modal.html">
-                                            <i class="far fa-window-restore"></i>Modals</a>
-                                    </li>
-                                    <li>
-                                        <a href="switch.html">
-                                            <i class="fas fa-toggle-on"></i>Switchs</a>
-                                    </li>
-                                    <li>
-                                        <a href="grid.html">
-                                            <i class="fas fa-th-large"></i>Grids</a>
-                                    </li>
-                                    <li>
-                                        <a href="fontawesome.html">
-                                            <i class="fab fa-font-awesome"></i>FontAwesome</a>
-                                    </li>
-                                    <li>
-                                        <a href="typo.html">
-                                            <i class="fas fa-font"></i>Typography</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                                    <a href="forms.php?type=add_t2" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>T.2 (Tenente)</a>
+                                </li>
+                                <li>
+                                    <a href="forms.php?type=add_t3" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>T.3 (Capitão)</a>
+                                </li>
+                                <li>
+                                    <a href="tables.php?type=relatorios_guias" style="color: red;">
+                                        <i class="fas fa-sign-in-alt"></i>Ver relatórios</a>
+                                </li>
+                                <?php endif; ?>
+                                <li>
+                                    <a href="tables.php?type=ver_guias">
+                                        <i class="fas fa-sign-in-alt"></i>Ver lista de Guias</a>
+                                </li>
+                         
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+
+                        <?php if($num_select_guia > 0): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-user-md"></i>Scripts Guias
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                          
+                                <li>
+                                    <a href="documento_ts.php">
+                                        <i class="fas fa-sign-in-alt"></i>T. Soldados (TS)</a>
+                                </li>
+                                <li>
+                                    <a href="documento_t1.php">
+                                        <i class="fas fa-sign-in-alt"></i>Treinamento 1 (Cabo)</a>
+                                </li>
+                              
+                                <li>
+                                    <a href="documento_estatuto_guia.php">
+                                        <i class="fas fa-sign-in-alt"></i>Estatuto Interno</a>
+                                </li>
+                         
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <?php if($num_select_pf > 0): ?>
+                                                <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Professores
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+
+                            <?php if($getlider_pf > 1): ?>
+                            <li >
+                                    <a href="forms.php?type=add_professor" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>Adicionar professor</a>
+                                </li>
+                                <?php endif; ?>
+                            <li>
+                                    <a href="forms.php?type=add_te">
+                                        <i class="fas fa-sign-in-alt"></i>T. Especializado (Sargento)</a>
+                                </li>
+                                <li>
+                                    <a href="forms.php?type=add_tf">
+                                        <i class="fas fa-sign-in-alt"></i>T. Formação (Subtenente)</a>
+                                </li>
+                             <?php if($getlider_pf > 1): ?>
+                                <li >
+                                    <a href="tables.php?type=relatorios_professores" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>Ver relatórios</a>
+                                </li>
+                                <li >
+                                    <a href="tables.php?type=ver_professores" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>Ver professores</a>
+                                </li>
+                             <?php endif; ?>
+                            </ul>
+                        </li>
+                                            <?php endif; ?>
+
+
+
+
+                                            <?php if($num_select_pf > 0): ?>
+                                                <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Scripts Professores
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+
+                           
+                            <li>
+                                    <a href="documento_te.php">
+                                        <i class="fas fa-sign-in-alt"></i>T. Especializado (Sargento)</a>
+                                </li>
+                                <li>
+                                    <a href="documento_tf.php">
+                                        <i class="fas fa-sign-in-alt"></i>T. Formação (Subtenente)</a>
+                                </li>
+                             
+                            </ul>
+                        </li>
+                                            <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <?php if($num_select_ins > 0): ?>
+                                                <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Instrutores
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <?php if($getlider_ins > 1): ?>
+                            <li >
+                                    <a href="forms.php?type=add_instrutor" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>Adicionar instrutor</a>
+                                </li>
+                                <li >
+                                    <a href="tables.php?type=ver_instrutores" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>Ver instrutores</a>
+                                </li>
+                                <?php endif; ?>
+                            <li>
+                                    <a href="forms.php?type=add_cfo">
+                                        <i class="fas fa-sign-in-alt"></i>C. Formação de Oficiais</a>
+                                </li>
+                               <?php if($getlider_ins > 1): ?>
+                                <li>
+                                    <a href="tables.php?type=relatorios_instrutores" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>Ver relatórios</a>
+                                </li>
+                                <li>
+                                    <a href="tables.php?type=ver_cfos" style='color: red;'>
+                                        <i class="fas fa-sign-in-alt"></i>Aprovar/reprovar CFO</a>
+                                </li>
+                               <?php endif; ?>
+                             
+                            </ul>
+                        </li>
+                                            <?php endif; ?>
+
+                     
+                            
+
+
+                        
+                        <li>
+                            <a href="logout.php" style="color: black;">
+                                <i class="fas fa-power-off"></i>Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             </aside>

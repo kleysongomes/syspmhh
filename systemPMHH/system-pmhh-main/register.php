@@ -70,7 +70,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,97,1) 37%, rgba
                                 </div>
                                 <div class="form-group">
                                     <label>Senha</label>
-                                    <input class="au-input au-input--full" type="password" name="senha" placeholder="Email">
+                                    <input class="au-input au-input--full" type="password" name="senha" placeholder="Senha">
                                 </div>
                                 <?php $numrand = rand(1000, 9999);
                             $_SESSION["cod_secreto"] = "PMHH-".$numrand;

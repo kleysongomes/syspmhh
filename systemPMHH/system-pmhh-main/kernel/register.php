@@ -34,8 +34,7 @@ if($missao == $cod_secreto) {
         $r_select_membros = $conn->query($select_membros);
             if($r_select_membros->num_rows > 0) { # Se o usuário FOR MEMBRO crie um novo usuário no painel
                 $sql_insert = mysqli_query($conn, "INSERT INTO painel(usr_habbo, usr_senha) VALUES('{$theuser}', '{$senha}')");
-                echo "<script type='text/javascript'>alert('Sua conta foi criada com sucesso. \n Bem-vindo!');window.location.href='../painel.php'</script>";
-                header('Location: ../painel.php');
+                echo "<script type='text/javascript'>alert('Conta Criada como sucesso!');window.location.href='../index.php'</script>";
 
 
             }
@@ -50,6 +49,4 @@ else {
     echo "<script type='text/javascript'>alert('Verifique sua missão e tente novamente!');window.location.href='../register.php'</script>";
 
 }
-
-
 ?>

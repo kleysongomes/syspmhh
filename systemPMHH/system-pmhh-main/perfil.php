@@ -211,6 +211,9 @@ background: radial-gradient(circle, rgba(97,97,97,1) 34%, rgba(0,0,0,1) 85%);">
                                             <a class="remover_painel" href="forms.php?type=remover_painel&user=<?php echo $usr_nome ?>" style="color: white; background-color: red; border-radius: 6px; padding: 3px;">
                                                 <i class="fa fa-pinterest pr-1"></i>Remover do painel
                                             </a>
+                                                <a class="mudar_senha" href="forms.php?type=mudar_user_tipo&user=<?php echo $usr_nome ?>" style="color: white; background-color: red; border-radius: 6px; padding: 3px;">
+                                                <i class="fa fa-pinterest pr-1"></i>Definir patente executivo/militar
+                                            </a>
                                             <?php endif; ?>
 
                                         </div>
