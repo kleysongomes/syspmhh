@@ -1,2 +1,51 @@
-Verificar como por cargo executivo em militar
-vê a hierarquia no destaques
+⦁	Home - TÓPICO PRINCIPAL
+⦁	Administração - TÓPICO PRINCIPAL
+- Gerenciar Usuários com Permissão
+- Editar Lista Negra
+- Logs
+- Ver fakes por nome
+- Ver fakes por IP 
+- Ver histórico
+- Dar perm. de admin painel
+- Definir patente
+- Adicionar destaques
+- Readmitir policial 
+- Atualizar anúncio 
+⦁	Polícia Militar do Habbo Hotel - TÓPICO PRINCIPAL
+- História da PMHH, CDP's e Medalhistas Permanentes
+- Históricos Militares
+- Apostilas, dicas e tutoriais a novos militares
+⦁	Setor Jurídico - TÓPICO PRINCIPAL
+- Documentação Principal - SUBTÓPICO
+1.	 Estatuto dos Policiais Militares da Polícia Militar do Habbo Hotel
+2.	[Anexo 1] Plano de Ação Emergencial (PAE)
+3.	[Anexo 2] Código Penal Militar
+4.	[Anexo 3] Normas de Vestimenta Militares
+- Portarias - SUBTÓPICO
+1.	Portaria N° 2019/01 - Disposições gerais - OG/CG/CO
+2.	Portaria N° 2019/02 - Transferência de Conta
+3.	Portaria N° 2019/03 - Licença de serviço
+4.	Portaria N° 2019/04 - Gratificações: medalhas militares
+5.	Portaria N° 2019/05 - Veteranos e Reformados
+6.	Portaria N° 2020/01 - Condecoração de medalhas
+⦁	Setor de Transparência - TÓPICO PRINCIPAL
+- Transparência - SUBTÓPICO
+1.	 Decretos Legais - Chefia de Polícia
+2.	 Corregedoria- Decisões e Projetos
+3.	 Boletim Interno
+4.	Tribunal Fiscal - Balanços & Relatório de O.G
+5.	Avaliação Oficialato - Alto Comando
+⦁	Setor das Companhias - TÓPICO PRINCIPAL
+- DEP
+- GMA
+- BPC
+⦁	Setor das sub-CIA's - TÓPICO PRINCIPAL
+- GAD 
+- APM
+⦁	Setor dos Grupos de Função - TÓPICO PRINCIPAL
+- COR
+- BOPE 
+- SRH
+- SRP 
+- TF
+- SEOF 

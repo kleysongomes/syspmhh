@@ -48,7 +48,7 @@ $sqlfetchsudo = mysqli_fetch_array($getusersudo);
 $usr_sudo = $sqlfetchsudo["usr_perm"];
 
 ?>
-<!-- MENU SIDEBAR Desktop-->
+<!-- MENU SIDEBAR DESKTOP-->
 <aside class="menu-sidebar2">
             <div class="logo" style="background: #47494e;">
                 <a href="painel.php">
@@ -132,19 +132,19 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                         <?php endif; ?>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-file"></i>Documentos
+                                <i class="fas fa-file"></i>Polícia Militar do Habbo Hotel
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <li>
-                                    <a href="documento_estatuto.php">
-                                        <i class="fas fa-sign-in-alt"></i>Estatuto</a>
+                                    <a href="">
+                                        <i class="fas fa-sign-in-alt"></i>História da PMHH, CDP's e Medalhistas Permanentes</a>
                                 </li>
                                 <li>
-                                    <a href="documento_constituicao.php">
-                                        <i class="fas fa-sign-in-alt"></i>Constituição</a>
+                                    <a href="">
+                                        <i class="fas fa-sign-in-alt"></i>Históricos Militares</a>
                                 </li>
                              
                             </ul>
