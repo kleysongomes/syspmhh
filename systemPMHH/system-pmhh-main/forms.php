@@ -133,7 +133,7 @@ elseif(isset($_POST['promover'])) {
         $uptt_id = $fetch_get_u_ptt["usr_patente"];
         
         # comparação:
-        if($poder_promover_patente < $uptt_id && $count_get_relatorios_t2 > 0) { # Pode promover
+        if($poder_promover_patente < $uptt_id) { # Pode promover
             echo "<script type='text/javascript'>alert('Usuário promovido com sucesso!');window.location.href='painel.php';</script>";
             $newpatente_id = $uptt_id - 1;
             $usr_ip = $_SERVER['REMOTE_ADDR'];
@@ -175,7 +175,7 @@ elseif(isset($_POST['rebaixar'])) {
         $uptt_id = $fetch_get_u_ptt["usr_patente"];
         
         # comparação:
-        if($poder_rebaixar_patente <= $uptt_id && $count_get_relatorios_t2 > 0) { # Pode rebaixar
+        if($poder_rebaixar_patente <= $uptt_id) { # Pode rebaixar
             echo "<script type='text/javascript'>alert('Usuário rebaixado com sucesso!');window.location.href='painel.php';</script>";
             $newpatente_id = $uptt_id + 1;
             $usr_ip = $_SERVER['REMOTE_ADDR'];
@@ -222,7 +222,7 @@ elseif(isset($_POST['demitir'])) {
         $uptt_id = $fetch_get_u_ptt["usr_patente"];
         
         # comparação:
-        if($poder_demitir_patente <= $uptt_id && $count_get_relatorios_t2 > 0) { # Pode demitir
+        if($poder_demitir_patente <= $uptt_id) { # Pode demitir
             echo "<script type='text/javascript'>alert('Usuário demitido com sucesso!');window.location.href='painel.php';</script>";
             $usr_ip = $_SERVER['REMOTE_ADDR'];
         $sql_promover = mysqli_query($conn, "UPDATE membros SET usr_status = '3', usr_responsavel = '{$usuarioNome}', usr_promo = CURRENT_TIMESTAMP() WHERE usr_habbo = '{$nick}'");
@@ -268,7 +268,7 @@ elseif(isset($_POST['advertir'])) {
         $uptt_id = $fetch_get_u_ptt["usr_patente"];
         
         # comparação:
-        if($poder_rebaixar_patente <= $uptt_id && $count_get_relatorios_t2 > 0) { # Pode advertir
+        if($poder_rebaixar_patente <= $uptt_id) { # Pode advertir
             $newpatente_id = $uptt_id + 1;
             $usr_ip = $_SERVER['REMOTE_ADDR'];
         $sql_insertlog = mysqli_query($conn, "INSERT INTO logs(usr_habbo, msg, usr_ip, log_tipo) VALUES('{$usuarioNome}', 'Advertiu o usuário {$nick} - {$motivos}', '{$usr_ip}', '1')");

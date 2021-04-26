@@ -130,6 +130,7 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                             </ul>
                         </li>
                         <?php endif; ?>
+                    
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-file"></i>Polícia Militar do Habbo Hotel
@@ -139,16 +140,255 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <li>
-                                    <a href="">
+                                    <a href="#">
                                         <i class="fas fa-sign-in-alt"></i>História da PMHH, CDP's e Medalhistas Permanentes</a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="#">
                                         <i class="fas fa-sign-in-alt"></i>Históricos Militares</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>Apostilas, dicas e tutoriais a novos militares</a>
                                 </li>
                              
                             </ul>
                         </li>
+
+
+                        <?php if($patente_id <= 17): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-suitcase"></i>Setor Jurídico
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        
+                                    <?php if($patente_id <= 17): ?>
+                                    <li class="has-sub">
+                                        <a class="js-arrow" href="#">
+                                            <i class="fas fa-suitcase"></i>Documentação Principal
+                                            <span class="arrow">
+                                                <i class="fas fa-angle-down"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>Estatuto dos Policiais Militares da Polícia Militar do Habbo Hotel</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>[Anexo 1] Plano de Ação Emergencial (PAE)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>[Anexo 2] Código Penal Militar</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>[Anexo 3] Normas de Vestimenta Militares</a>
+                                            </li>
+                                        
+                                    
+                                        </ul>
+                                    </li>
+                                    <?php endif; ?>
+
+                                                <?php if($patente_id <= 17): ?>
+                                    <li class="has-sub">
+                                        <a class="js-arrow" href="#">
+                                            <i class="fas fa-suitcase"></i>Portarias
+                                            <span class="arrow">
+                                                <i class="fas fa-angle-down"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/01 - Disposições gerais - OG/CG/CO</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/02 - Transferência de Conta</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/03 - Licença de serviço</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/04 - Gratificações: medalhas militares</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/05 - Veteranos e Reformados</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-sign-in-alt"></i>Portaria N° 2020/01 - Condecoração de medalhas</a>
+                                            </li>
+                                        
+                                    
+                                        </ul>
+                                    </li>
+                                    <?php endif; ?>
+
+                               
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+
+
+                        <?php if($patente_id <= 17): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-suitcase"></i>Setor de Transparência
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>Decretos Legais - Chefia de Polícia</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>Corregedoria- Decisões e Projetos</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>Boletim Interno</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>Tribunal Fiscal - Balanços & Relatório de O.G</a>
+                                </li>
+                                <?php if($patente_id <= 10): ?>  <!-- Perm OK -->
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>Avaliação Oficialato - Alto Comando</a>
+                                </li>
+                                <?php endif; ?>
+                           
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+
+
+                        <?php if($patente_id <= 17): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-suitcase"></i>Setor das Companhias
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>GMA</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>DEP</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>BPC</a>
+                                </li>
+                               
+                           
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+
+
+
+                        <?php if($patente_id <= 17): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-suitcase"></i>Setor das sub-Companhias
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>GAD</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>APM</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+
+
+                        <?php if($patente_id <= 17): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-suitcase"></i>Setor dos Grupos de Função
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>COR</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>BOPE</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>SRH</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>SRP</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>TF</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>SEOF</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+
+
+                        <?php if($patente_id <= 17): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-suitcase"></i>DEV
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+
+                               
+                            <li>
+                                    <a href="forms.php?type=add_ts">
+                                        <i class="fas fa-sign-in-alt"></i>Add Soldado</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <?php endif; ?>
 
 
                         <li>

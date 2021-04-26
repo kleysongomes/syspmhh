@@ -1,3 +1,25 @@
+                        <?php if($patente_id <= 17): ?>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-suitcase"></i>Nome topico
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-sign-in-alt"></i>select in topico</a>
+                                </li>
+                               
+                           
+                            </ul>
+                        </li>
+                        <?php endif; ?>
+
+
+
+
 ⦁	Home - TÓPICO PRINCIPAL
 ⦁	Administração - TÓPICO PRINCIPAL
 - Gerenciar Usuários com Permissão
@@ -28,13 +50,17 @@
 4.	Portaria N° 2019/04 - Gratificações: medalhas militares
 5.	Portaria N° 2019/05 - Veteranos e Reformados
 6.	Portaria N° 2020/01 - Condecoração de medalhas
+
 ⦁	Setor de Transparência - TÓPICO PRINCIPAL
-- Transparência - SUBTÓPICO
+
 1.	 Decretos Legais - Chefia de Polícia
 2.	 Corregedoria- Decisões e Projetos
 3.	 Boletim Interno
 4.	Tribunal Fiscal - Balanços & Relatório de O.G
 5.	Avaliação Oficialato - Alto Comando
+
+
+
 ⦁	Setor das Companhias - TÓPICO PRINCIPAL
 - DEP
 - GMA
