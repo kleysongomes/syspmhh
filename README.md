@@ -1,19 +1,15 @@
-# Visual Studio Code - Open Source ("Code - OSS")
+# System PMHH - Open Source ("syspmhh")
 
-<!-- [![Build Status](https://dev.azure.com/vscode/VSCode/_apis/build/status/VS%20Code?branchName=master)](https://aka.ms/vscode-builds) -->
-[![Build Status](https://dev.azure.com/vscode/VSCode/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/vscode/VSCode/_build/latest?definitionId=12)
-[![Feature Requests](https://img.shields.io/github/issues/Microsoft/vscode/feature-request.svg)](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)
-[![Bugs](https://img.shields.io/github/issues/Microsoft/vscode/bug.svg)](https://github.com/Microsoft/vscode/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Gitter](https://img.shields.io/badge/chat-on%20gitter-yellow.svg)](https://gitter.im/Microsoft/vscode)
+[![Build Status](Desenvolvimento)
 
-## The Repository
+## O Repositório
 
-This repository ("`Code - OSS`") is where we (Microsoft) develop the [Visual Studio Code](https://code.visualstudio.com) product. Not only do we work on code and issues here, we also publish our [roadmap](https://github.com/microsoft/vscode/wiki/Roadmap), [monthly iteration plans](https://github.com/microsoft/vscode/wiki/Iteration-Plans), and our [endgame plans](https://github.com/microsoft/vscode/wiki/Running-the-Endgame). This source code is available to everyone under the standard [MIT license](https://github.com/microsoft/vscode/blob/master/LICENSE.txt).
+O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System PMHH](http://pmhh.desbravalink.com/) produtos. Não apenas trabalhamos com código e problemas aqui, mas também publicamos nosso [roadmap](#), [monthly iteration plans](#), and our [endgame plans](#). Este código-fonte está disponível para todos sob o padrão [MIT license](https://github.com/kleysongomes/syspmhh/blob/master/LICENSE.txt).
 
-## Visual Studio Code
+## System PMHH
 
 <p align="center">
-  <img alt="VS Code in action" src="https://user-images.githubusercontent.com/1487073/58344409-70473b80-7e0a-11e9-8570-b2efc6f8fa44.png">
+  <img alt="System PMHH" src="https://i.imgur.com/RFmyWwV.png">
 </p>
 
 [Visual Studio Code](https://code.visualstudio.com) is a distribution of the `Code - OSS` repository with Microsoft specific customizations released under a traditional [Microsoft product license](https://code.visualstudio.com/License/).
