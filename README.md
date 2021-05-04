@@ -8,4 +8,4 @@ HTML
 PHP
 MySQL
 
-**Instruções para instalação: **
+**Instruções para instalação:**
