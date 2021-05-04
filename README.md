@@ -1,7 +1,7 @@
 # System PMHH - Open Source ("syspmhh")
 
 ![Generic badge](https://img.shields.io/badge/STATUS-DESENVOLVIMENTO-<COLOR>.svg)
-![Generic badge](https://img.shields.io/badge/LICENSE-MIT-<COLOR>.svg)(https://github.com/kleysongomes/syspmhh/blob/master/LICENSE.txt)
+[![Generic badge](https://img.shields.io/badge/LICENSE-MIT-<COLOR>.svg)](https://github.com/kleysongomes/syspmhh/blob/master/LICENSE.txt)
 ![Generic badge](https://img.shields.io/badge/DEV-KLEYSONGOMES-<COLOR>.svg)
 ## O Repositório
 
