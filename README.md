@@ -1,7 +1,8 @@
 # System PMHH - Open Source ("syspmhh")
 
-[![Build Status](Desenvolvimento)
-
+[![Generic badge](https://img.shields.io/badge/<STATUS>-<DESENVOLVIMENTO>-<COLOR>.svg)]
+[![Generic badge](https://img.shields.io/badge/<LICENSE>-<MIT>-<COLOR>.svg)]
+[![Generic badge](https://img.shields.io/badge/<DEV>-<KLEYSONGOMES>-<COLOR>.svg)]
 ## O Repositório
 
 O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System PMHH](http://pmhh.desbravalink.com/) produtos. Não apenas trabalhamos com código e problemas aqui, mas também publicamos nosso [roadmap](#), [monthly iteration plans](#), and our [endgame plans](#). Este código-fonte está disponível para todos sob o padrão [MIT license](https://github.com/kleysongomes/syspmhh/blob/master/LICENSE.txt).
