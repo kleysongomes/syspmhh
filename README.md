@@ -13,38 +13,26 @@ O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System
   <img alt="System PMHH" src="https://i.imgur.com/RFmyWwV.png">
 </p>
 
-[Visual Studio Code](https://code.visualstudio.com) is a distribution of the `Code - OSS` repository with Microsoft specific customizations released under a traditional [Microsoft product license](https://code.visualstudio.com/License/).
+[System PMHH](http://pmhh.desbravalink.com/) é uma distribuição do `System PMHH` com personalizações específicas da Microsoft lançadas sob uma licença de produto tradicional da Desbravalink.
+ [Desbravalink product license](https://github.com/kleysongomes/syspmhh/blob/master/LICENSE.txt).
 
-[Visual Studio Code](https://code.visualstudio.com) combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.
+[System PMHH](http://pmhh.desbravalink.com/) Combina a simplicidade na usabilidade e o foco na experiência do usuário. Ele fornece automação nos serviços militares dentro e fora do [Habbo](https://www.habbo.com.br/), regenciamento completo das atividades realizadas dentro do [System PMHH](http://pmhh.desbravalink.com/), desenvolvido sobre demanda com as necessidades e adaptações solicitadas pela PMHH.
 
-Visual Studio Code is updated monthly with new features and bug fixes. You can download it for Windows, macOS, and Linux on [Visual Studio Code's website](https://code.visualstudio.com/Download). To get the latest releases every day, install the [Insiders build](https://code.visualstudio.com/insiders).
+O System PMHH é atualizado mensalmente com novos recursos e correções de bugs. Você pode realizar o clone do projeto para edição, sugestão livrimente em [repositories](https://github.com/kleysongomes/syspmhh). Para a utilização sem probelmas ou encargos siga a [Desbravalink product license](https://github.com/kleysongomes/syspmhh/blob/master/LICENSE.txt).
 
 
 
-## Contributing
+## Contribuindo
 
-There are many ways in which you can participate in the project, for example:
+Existem muitas maneiras pelas quais você pode participar do projeto, por exemplo:
 
-* [Submit bugs and feature requests](https://github.com/microsoft/vscode/issues), and help us verify as they are checked in
-* Review [source code changes](https://github.com/microsoft/vscode/pulls)
-* Review the [documentation](https://github.com/microsoft/vscode-docs) and make pull requests for anything from typos to new content
-
-If you are interested in fixing issues and contributing directly to the code base,
-please see the document [How to Contribute](https://github.com/Microsoft/vscode/wiki/How-to-Contribute), which covers the following:
-
-* [How to build and run from source](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#build-and-run)
-* [The development workflow, including debugging and running tests](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#debugging)
-* [Coding guidelines](https://github.com/Microsoft/vscode/wiki/Coding-Guidelines)
-* [Submitting pull requests](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#pull-requests)
-* [Contributing to translations](https://aka.ms/vscodeloc)
+* Envie bugs e solicitações de recursos e nos ajude a verificar à medida que são verificados
+Revise as alterações do código fonte.
+* Revise a documentação e faça solicitações de pull para qualquer coisa, desde erros de digitação até novo conteúdo
 
 ## Feedback
 
-* Ask a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode)
-* [Request a new feature](CONTRIBUTING.md)
-* Up vote [popular feature requests](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)
-* [File an issue](https://github.com/Microsoft/vscode/issues)
-* Follow [@code](https://twitter.com/code) and let us know what you think!
+* 
 
 ## Related Projects
 
