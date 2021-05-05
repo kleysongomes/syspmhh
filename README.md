@@ -34,20 +34,20 @@ Revise as alterações do código fonte.
 
 * 
 
-## Related Projects
+## Projetos relacionados
 
-Many of the core components and extensions to Code live in their own repositories on GitHub. For example, the [node debug adapter](https://github.com/microsoft/vscode-node-debug) and the [mono debug adapter](https://github.com/microsoft/vscode-mono-debug) have their own repositories. For a complete list, please visit the [Related Projects](https://github.com/Microsoft/vscode/wiki/Related-Projects) page on our [wiki](https://github.com/Microsoft/vscode/wiki).
+*
 
-## Bundled Extensions
+## Pacote de extensões
 
-Code includes a set of built-in extensions located in the [extensions](extensions) folder, including grammars and snippets for many languages. Extensions that provide rich language support (code completion, Go to Definition) for a language have the suffix `language-features`. For example, the `json` extension provides coloring for `JSON` and the `json-language-features` provides rich language support for `JSON`.
+*
 
-## Code of Conduct
+## Código de Conduta
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+*
 
 ## License
 
-Copyright (c) Microsoft Corporation. All rights reserved.
+Copyright (c) Desbravalink. Todos os Direitos Reservados.
 
 Licensed under the [MIT](LICENSE.txt) license.
