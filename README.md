@@ -5,7 +5,7 @@
 ![Generic badge](https://img.shields.io/badge/DEV-KLEYSONGOMES-<COLOR>.svg)
 ## O Repositório
 
-O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System PMHH](http://pmhh.desbravalink.com/) produtos. Não apenas trabalhamos com código e problemas aqui, mas também publicamos nosso [roadmap](#), [monthly iteration plans](#), and our [endgame plans](#). Este código-fonte está disponível para todos sob o padrão [MIT license](https://github.com/kleysongomes/syspmhh/blob/master/LICENSE.txt).
+O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System PMHH](http://pmhh.desbravalink.com/) produtos. Não apenas trabalhamos com código e problemas aqui, mas também publicamos nosso [roadmap](#), [monthly iteration plans](#), and our [endgame plans](#). Este código-fonte está disponível para todos sob o padrão [MIT license](https://github.com/desbravalink/product-license/blob/main/MIT%20License).
 
 ## System PMHH
 
@@ -18,7 +18,7 @@ O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System
 
 [System PMHH](http://pmhh.desbravalink.com/) Combina a simplicidade na usabilidade e o foco na experiência do usuário. Ele fornece automação nos serviços militares dentro e fora do [Habbo](https://www.habbo.com.br/), regenciamento completo das atividades realizadas dentro do [System PMHH](http://pmhh.desbravalink.com/), desenvolvido sobre demanda com as necessidades e adaptações solicitadas pela PMHH.
 
-O System PMHH é atualizado mensalmente com novos recursos e correções de bugs. Você pode realizar o clone do projeto para edição, sugestão livrimente em [repositories](https://github.com/kleysongomes/syspmhh). Para a utilização sem probelmas ou encargos siga a [Desbravalink product license](https://github.com/kleysongomes/syspmhh/blob/master/LICENSE.txt).
+O System PMHH é atualizado mensalmente com novos recursos e correções de bugs. Você pode realizar o clone do projeto para edição, sugestão livrimente em [repositories](https://github.com/kleysongomes/syspmhh). Para a utilização sem probelmas ou encargos siga a [Desbravalink product license](https://github.com/desbravalink/product-license/blob/main/MIT%20License).
 
 
 
@@ -50,4 +50,4 @@ Revise as alterações do código fonte.
 
 Copyright (c) Desbravalink. Todos os Direitos Reservados.
 
-Licensed under the [MIT](LICENSE.txt) license.
+Licensed under the [MIT](https://github.com/desbravalink/product-license/blob/main/MIT%20License) license.
