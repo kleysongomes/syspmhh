@@ -5,7 +5,7 @@
 ![Generic badge](https://img.shields.io/badge/DEV-KLEYSONGOMES-<COLOR>.svg)
 ## O Repositório
 
-O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System PMHH](http://pmhh.desbravalink.com/) produtos. Não apenas trabalhamos com código e problemas aqui, mas também publicamos nosso [roadmap](#), [monthly iteration plans](#), and our [endgame plans](#). Este código-fonte está disponível para todos sob o padrão [MIT license](https://github.com/desbravalink/product-license/blob/main/MIT%20License).
+O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System PMHH](http://pmhh.desbravalink.com/) produtos. Não apenas trabalhamos com código e problemas aqui, mas também permitimos a interação entre os Devs. Este código-fonte está disponível para todos sob o padrão [MIT license](https://github.com/desbravalink/product-license/blob/main/MIT%20License).
 
 ## System PMHH
 
