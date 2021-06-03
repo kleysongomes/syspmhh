@@ -189,9 +189,9 @@ $usr_permissao = $fetch_get_perm["usr_perm"];
                                        <ul>
                                        <li>
                                          <a href="meu_perfil.php">Meu perfil</a><br>
-                                       </li>
+                                       </li> 
                                        <li>
-                                         <a href="user_preferencias.php">Configurações</a><br>
+                                          <a href="user_configs.php">Altere sua Senha</a><br>
                                        </li>
                                        <hr>
                                        <?php 
@@ -200,7 +200,7 @@ $usr_permissao = $fetch_get_perm["usr_perm"];
                                        ?>
                                        <h6 style='text-align: center;'>Avançado</h6>
                                        <li>
-                                        <a href="forms.php?type=aval">Solicitar aval</a><br>
+                                        <a href="#">DEV</a><br>
                                     </li>
                                        <?php endif; ?>
                                        </ul>
