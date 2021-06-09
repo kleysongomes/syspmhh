@@ -51,7 +51,7 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
 <!-- MENU SIDEBAR DESKTOP-->
 <aside class="menu-sidebar2">
             <div class="logo" style="background: #47494e;">
-                <a href="painel.php">
+                <a href="../painel.php">
                     <h3 style="color: white;"><img src="<?php echo $imagem_site ?>"> <?php echo $titulo_site ?> </h3>
                 </a>
             </div>
@@ -65,7 +65,7 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                 <nav class="navbar-sidebar2">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a class="js-arrow" href="painel.php">
+                            <a class="js-arrow" href="../painel.php">
                                 <i class="fas fa-home"></i>Home
                               
                             </a>
@@ -82,49 +82,49 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <?php if($usr_sudo > 1): ?>
                             <li>
-                                    <a href="tables.php?type=gerusers">
+                                    <a href="../tables.php?type=gerusers">
                                     <i class="fas fa-gear"><i class="fas fa-users"></i></i>Gerenciar usuários com permissão</a>
                             </li>
                             
                             <li>
-                                    <a href="forms.php?type=edit_lista_negra">
+                                    <a href="../forms.php?type=edit_lista_negra">
                                     <i class="fas fa-gear"><i class="fas fa-bullhorn"></i></i>Editar lista negra</a>
                             </li>
                             <?php endif; ?>
                                 <li>
-                                    <a href="viewlogs.php">
+                                    <a href="../viewlogs.php">
                                    <i class="fas fa-search"></i>Logs</a>
                                 </li>
                                 <li>
-                                    <a href="verfakes_nome.php">
+                                    <a href="../verfakes_nome.php">
                                    <i class="fas fa-search"></i>Ver fakes por nome</a>
                                 </li>
                                 <li>
-                                    <a href="verfakes_ip.php">
+                                    <a href="../verfakes_ip.php">
                                    <i class="fas fa-search"></i>Ver fakes por IP</a>
                                 </li>
                                 <li>
-                                    <a href="tables.php?type=ver_historico">
+                                    <a href="../tables.php?type=ver_historico">
                                    <i class="fas fa-search"></i>Ver histórico</a>
                                 </li>
                                 <li>
-                                    <a href="forms.php?type=dar_adm_painel">
+                                    <a href="../forms.php?type=dar_adm_painel">
                                    <i class="fas fa-briefcase"></i>Dar perm. de admin painel</a>
                                 </li>
                                 <li>
-                                    <a href="forms.php?type=setar_patente">
+                                    <a href="../forms.php?type=setar_patente">
                                    <i class="fas fa-group"></i>Definir patente</a>
                                 </li>
                                 <li>
-                                    <a href="forms.php?type=add_destaques">
+                                    <a href="../forms.php?type=add_destaques">
                                    <i class="fas fa-group"></i>Adicionar destaques</a>
                                 </li>
                                 <li>
-                                    <a href="forms.php?type=readmitir_policial">
+                                    <a href="../forms.php?type=readmitir_policial">
                                    <i class="fas fa-group"></i>Readmitir policial</a>
                                 </li>
                                 <li>
-                                    <a href="forms.php?type=atualizar_anuncio">
+                                    <a href="../forms.php?type=atualizar_anuncio">
                                    <i class="fas fa-bullhorn"></i>Atualizar anúncio</a>
                                 </li>
                             </ul>
@@ -140,7 +140,7 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <li>
-                                    <a href="#">
+                                    <a href="../Docs/Doc1.php">
                                         <i class="fas fa-sign-in-alt"></i>História da PMHH, CDP's e Medalhistas Permanentes</a>
                                 </li>
                                 <li>
@@ -382,12 +382,12 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
 
                                
                             <li>
-                                <a href="forms.php?type=add_ts">
+                                <a href="../forms.php?type=add_ts">
                                     <i class="fas fa-sign-in-alt"></i>Add Soldado</a>
                             </li>
    
                             <li>
-                                <a href="tables.php?type=ver_policiais">
+                                <a href="../tables.php?type=ver_policiais">
                                     <i class="fas fa-group"></i>Lista de Policiais</a>
                             </li>
 
@@ -397,7 +397,7 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
 
 
                         <li>
-                            <a href="lista_negra.php" style="color: black;">
+                            <a href="../lista_negra.php" style="color: black;">
                                 <i class="fas fa-ban"></i>Lista Negra</a>
                         </li>
                         
@@ -407,7 +407,7 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
 
                         
                         <li>
-                            <a href="logout.php" style="color: black;">
+                            <a href="../logout.php" style="color: black;">
                                 <i class="fas fa-power-off"></i>Logout</a>
                         </li>
                     </ul>
