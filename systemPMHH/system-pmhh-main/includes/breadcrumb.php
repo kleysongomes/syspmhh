@@ -17,7 +17,7 @@ $a=array(
 BRKINGZ: Bem-vindo ao System da PMHH."=>"BRKINGZ: Bem-vindo ao System da PMHH.",
 
 "<img src=https://i.imgur.com/FTv6hqe.gif width=60 height=40>
-BRKINGZ: Versão do System 1.1.8."=>"BRKINGZ: Versão do System 1.1.8.",
+BRKINGZ: Versão do System 1.1.8."=>"BRKINGZ: Versão do System 1.3.0.",
 
 "<img src=https://i.imgur.com/CPYwpaW.gif width=60 height=40>
 Xumbica: Vença pelas suas atitudes, nunca discuta."=>"Xumbica: Vença pelas suas atitudes, nunca discuta.",

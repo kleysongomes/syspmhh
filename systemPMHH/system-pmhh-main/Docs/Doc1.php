@@ -115,43 +115,18 @@ $usr_permissao = $fetch_get_perm["usr_perm"];
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-xl-8">
+                            <div class="col-xl-12">
                                  <!-- RECENT REPORT 2-->
                                 <div class="recent-report2">
                                 <h3 style="text-align: center;" class="title-3">Constituição</h3><br>
-                                   <iframe style="width: 100%; height: 600px;" src="https://docs.google.com/document/d/e/2PACX-1vRf3yJ01RChvG3MUDBO3iOgbPXPXupnKlZsedLi4lcSdSW_fo4QuCzgmaiC3CksF5p9mNkxylgOncAr/pub?embedded=true"></iframe>
+                                   <iframe style="width: 100%; height: 800px;" src="https://docs.google.com/document/d/e/2PACX-1vT5Vk5Aw1OYguyNxF43sRryMDpDJOos1D6P1uQMg7eaThZqvfIJxETZVg9EKql674Tq0iDT2l6ti220/pub?embedded=true"></iframe>
 
 
 
                                 </div>
                                 <!-- END RECENT REPORT 2             -->
                             </div>
-                            <div class="col-xl-4">
-                                <!-- TASK PROGRESS-->
-                                <div class="task-progress">
-                                    <h3 class="title-3">Destaque semanal</h3>
-                                    <div class="au-skill-container">
-                                       <?php 
-                                       # dest inferior
-                                       $sql_get_dest_inferior = mysqli_query($conn, "SELECT * FROM membros WHERE usr_destaque = 1");
-                                       $sql_fetch_dest_inferior = mysqli_fetch_array($sql_get_dest_inferior);
-                                            $inf_usr_habbo = $sql_fetch_dest_inferior["usr_habbo"];
-                                        # dest superior
-                                        $sql_get_dest_superior = mysqli_query($conn, "SELECT * FROM membros WHERE usr_destaque = 2");
-                                        $sql_fetch_dest_superior = mysqli_fetch_array($sql_get_dest_superior);
-                                        $sup_usr_habbo = $sql_fetch_dest_superior["usr_habbo"];
-                                       ?>
-                                       <div style="-webkit-filter: drop-shadow(0 1px 0 #D4AF37) drop-shadow(0 -1px 0 #D4AF37) drop-shadow(1px 0 0 #D4AF37) drop-shadow(-1px 0 0 #D4AF37);" class="ttype-user"><img src="https://www.habbo.com.br/habbo-imaging/avatarimage?user=<?php echo $sup_usr_habbo ?>&action=std&direction=2&head_direction=2&gesture=std&size=b" style="-webkit-filter: drop-shadow(0 1px 0 #D4AF37) drop-shadow(0 -1px 0 #D4AF37) drop-shadow(1px 0 0 #D4AF37) drop-shadow(-1px 0 0 #D4AF37);" />
-                                           <span class="ttype-user-text">Superior: <?php echo $sup_usr_habbo ?></span>
-                                         </div>
-                                        <div style='margin-left: 30%;-webkit-filter: drop-shadow(0 1px 0 #D4AF37) drop-shadow(0 -1px 0 #D4AF37) drop-shadow(1px 0 0 #D4AF37) drop-shadow(-1px 0 0 #D4AF37);' class="ttype-user"><img style="-webkit-filter: drop-shadow(0 1px 0 #D4AF37) drop-shadow(0 -1px 0 #D4AF37) drop-shadow(1px 0 0 #D4AF37) drop-shadow(-1px 0 0 #D4AF37);"src="https://www.habbo.com.br/habbo-imaging/avatarimage?user=<?php echo $inf_usr_habbo ?>&action=std&direction=4&head_direction=4&gesture=std&size=b" />
-                                           <span class="ttype-user-text">Inferior: <?php echo $inf_usr_habbo ?></span>
-                                         </div>
-                                         
-                                    </div>
-                                </div>
-                                <!-- END TASK PROGRESS-->
-                            </div>
+
 
                             <!-- Começo últimos alistados -->
                             <div class="col-md-6">
