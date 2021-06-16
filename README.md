@@ -50,4 +50,4 @@ Revise as alterações do código fonte.
 
 Copyright (c) Desbravalink. Todos os Direitos Reservados.
 
-Licensed under the [MIT](https://github.com/desbravalink/product-license/blob/main/MIT%20License) license.
+Licensed under the [MIT] (https://github.com/desbravalink/product-license/blob/main/MIT%20License) license.
