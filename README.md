@@ -44,7 +44,7 @@ Revise as alterações do código fonte.
 
 ## Código de Conduta
 
-*
+*-*
 
 ## License
 
