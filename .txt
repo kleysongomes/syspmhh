@@ -1,2 +1,14 @@
 Arquivo de para testes. 
 teste01
+
+
+
+ad:
+<!--ad-->
+<script data-ad-client="ca-pub-4513727924184300" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+Add in 
+login.html
+painel.php
