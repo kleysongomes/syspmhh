@@ -140,15 +140,15 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <li>
-                                    <a href="../Docs/Doc1.php">
+                                    <a href="Doc1.php">
                                         <i class="fas fa-sign-in-alt"></i>História da PMHH, CDP's e Medalhistas Permanentes</a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="Doc2.php">
                                         <i class="fas fa-sign-in-alt"></i>Históricos Militares</a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="Doc3.php">
                                         <i class="fas fa-sign-in-alt"></i>Apostilas, dicas e tutoriais a novos militares</a>
                                 </li>
                              
@@ -176,19 +176,19 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                                         </a>
                                         <ul class="list-unstyled navbar__sub-list js-sub-list">
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc4.php">
                                                     <i class="fas fa-sign-in-alt"></i>Estatuto dos Policiais Militares da Polícia Militar do Habbo Hotel</a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc4.php">
                                                     <i class="fas fa-sign-in-alt"></i>[Anexo 1] Plano de Ação Emergencial (PAE)</a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc5.php">
                                                     <i class="fas fa-sign-in-alt"></i>[Anexo 2] Código Penal Militar</a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc6.php">
                                                     <i class="fas fa-sign-in-alt"></i>[Anexo 3] Normas de Vestimenta Militares</a>
                                             </li>
                                         
@@ -207,27 +207,27 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                                         </a>
                                         <ul class="list-unstyled navbar__sub-list js-sub-list">
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc7.php">
                                                     <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/01 - Disposições gerais - OG/CG/CO</a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc8.php">
                                                     <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/02 - Transferência de Conta</a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc9.php">
                                                     <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/03 - Licença de serviço</a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc10.php">
                                                     <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/04 - Gratificações: medalhas militares</a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc11.php">
                                                     <i class="fas fa-sign-in-alt"></i>Portaria N° 2019/05 - Veteranos e Reformados</a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="Doc12.php">
                                                     <i class="fas fa-sign-in-alt"></i>Portaria N° 2020/01 - Condecoração de medalhas</a>
                                             </li>
                                         
@@ -252,24 +252,24 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="#">
+                                    <a href="Doc13.php">
                                         <i class="fas fa-sign-in-alt"></i>Decretos Legais - Chefia de Polícia</a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="Doc14.php">
                                         <i class="fas fa-sign-in-alt"></i>Corregedoria- Decisões e Projetos</a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="Doc15.php">
                                         <i class="fas fa-sign-in-alt"></i>Boletim Interno</a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="Doc16.php">
                                         <i class="fas fa-sign-in-alt"></i>Tribunal Fiscal - Balanços & Relatório de O.G</a>
                                 </li>
                                 <?php if($patente_id <= 10): ?>  <!-- Perm OK -->
                                 <li>
-                                    <a href="#">
+                                    <a href="Doc17.php">
                                         <i class="fas fa-sign-in-alt"></i>Avaliação Oficialato - Alto Comando</a>
                                 </li>
                                 <?php endif; ?>
