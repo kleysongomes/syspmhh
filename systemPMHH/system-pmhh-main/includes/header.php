@@ -67,6 +67,7 @@ $usr_sudo = $sqlfetchsudo["usr_perm"];
 <header class="header-desktop2" style="background: #393a3e;">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
+                    <p style="text-align: center;"><span>System Versão 1.4.9</span></p>
                         <div class="header-wrap2">
                             <div class="logo d-block d-lg-none" style="background: #47494e;">
                                 <a href="painel.php">
