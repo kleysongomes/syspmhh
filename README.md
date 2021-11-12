@@ -11,6 +11,7 @@ O Repositório ("`syspmhh`") é onde nós (Desbravalink) desenvolvemos o [System
 
 <p align="center">
   <img alt="System PMHH" src="https://i.imgur.com/RFmyWwV.png">
+  ![image](https://user-images.githubusercontent.com/55289896/141514828-9bf7ecac-5512-4bf7-9457-8de3d98cb5ee.png)
 </p>
 
 [System PMHH](http://pmhh.desbravalink.com/) é uma distribuição do `System PMHH` com personalizações específicas da Desbravalink lançadas sob uma licença de produto tradicional da Desbravalink.
